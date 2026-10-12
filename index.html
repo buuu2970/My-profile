@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git 練習ページ</title>
+  <style>
+    body {
+      font-family: "Hiragino Sans", "Meiryo", sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      background: #f7f7f9;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #2b5797;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    header h1 { margin: 0; font-size: 1.6rem; }
+    section {
+      background: #fff;
+      margin-top: 20px;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h2 {
+      border-left: 5px solid #2b5797;
+      padding-left: 10px;
+      font-size: 1.2rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin: 10px 0;
+    }
+    .card h3 { margin: 0 0 4px; font-size: 1rem; }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Git 練習ページ</h1>
+    <p>ブランチを作って、自分の欄を追記してコミットしよう</p>
+  </header>
+
+  <section>
+    <h2>課題の手順</h2>
+    <ol>
+      <li><code>git checkout -b 自分の名前</code> でブランチを作る</li>
+      <li>下の「メンバー紹介」に自分のカードを追記する</li>
+      <li><code>git add index.html</code></li>
+      <li><code>git commit -m "〇〇の紹介を追加"</code></li>
+      <li><code>git push origin 自分の名前</code></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>メンバー紹介</h2>
+
+
+    <!-- ↓↓↓ ここから下に自分のカードを追記 ↓↓↓ -->
+<div class="card">
+  <h3>真理 不亜那</h3>
+  <p>好きなこと：鼻呼吸</p>
+  <p>ひとこと：5000円からお願いします</p>
+  <p>週休7日からみた印象：副流煙と友達、足がとても速い</p>
+</div>
+    <!-- ↑↑↑ ここまで ↑↑↑ -->
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Git 練習</p>
+  </footer>
+
+</body>
+</html>
